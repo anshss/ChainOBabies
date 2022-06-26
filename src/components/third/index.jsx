@@ -9,8 +9,8 @@ const Third = () => {
         <h5>Made with ❤️ by GlenX</h5>
         </div>
         <div className="sec2">
-            <p>dummy@gmail.com</p>
-            <p>dummy@gmail.com</p>
+            <p>anshspvt@gmail.com</p>
+            <p>sarthakvaish184@gmail.com</p>
         </div>
         </div>
     )

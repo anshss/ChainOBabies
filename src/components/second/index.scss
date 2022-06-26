@@ -1,3 +1,5 @@
+@import "../../var.scss";
+
 .second{
     padding-top: 14rem;
     padding-bottom: 22rem;
@@ -6,19 +8,21 @@
     height: 25rem;
     display: flex;
     flex-direction: row;    
-    background-color: #F9F3EE;
+    // background-color: #F9F3EE;
 
 
     .card{
         color: #ac7d88;
-        background-image: linear-gradient(to bottom right, #f7e1f3, #e1c0da);
-        border-radius: 3px;
+        // background-image: linear-gradient(to bottom right, #f7e1f3, #ffe0f8);
+        background-color: #e7c4e0;
+        border-radius: 8px;
         text-align: center;
         width: 15%;
         height: 18rem;
         margin: 2rem;
         padding: 5rem;
         padding-top: 7rem; 
+        font-family: $cardfont;
  
         
         img{
