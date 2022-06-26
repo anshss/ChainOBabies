@@ -14,7 +14,9 @@ And that's what Chain O' Brain allows you to do.
 - This elegant and eye-soothing interface is in resonance with the feeling of the day.
 
 <br />
-### [Click here to see Deployed Website Live](https://chain-o-baby.vercel.app/)
+
+### [👉 Click here to see deployed site Live](https://chain-0-baby.vercel.app/)
+
 <br />
 
 ### Built with
@@ -52,9 +54,8 @@ Alan AI is a in-app voice  assistant to guid you through using our website. Try 
 4. "how to submit"
 
 <br />
-[Video link of project](https://youtu.be/N70kwde-oEY)
 
-<br />
+[Video link of project](https://youtu.be/N70kwde-oEY)
 
 ### Future Scope
 Staking could be enabled on the platform allowing parents to stake tokens for their children. Newborn's wallet address will be made and staked token will be transferred there directly. Once the newborn turns 18 parent's could gift them there accounts private key. Parents colud also create yearly SIP for increasing staked amount.
