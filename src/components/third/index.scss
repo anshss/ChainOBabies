@@ -1,3 +1,5 @@
+@import "../../var.scss";
+
 .third{
     height: 12rem;
     background-color: #85586f;
@@ -17,6 +19,7 @@
     .sec2{
         margin-left: 25rem;
         margin-top: 2rem;
+        font-family: $cardfont;
         :nth-child(2){
             margin-top: -0.4rem;
         }
