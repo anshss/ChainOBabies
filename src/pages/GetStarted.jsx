@@ -1,6 +1,7 @@
 import React from "react";
 import Popup from "../components/Popup";
 import "./index.css";
+import { TextField } from "@mui/material";
 
 function GetStarted() {
   const [showPopup, setShowPopup] = React.useState(false);
@@ -22,14 +23,14 @@ function GetStarted() {
               <div>
                 <label
                   for="father_name"
-                  class="block mb-px text-center text-sm font-medium text-gray-900 "
+                  class="block mb-px text-lg font-medium text-gray-900 "
                 >
                   Father Name
                 </label>
                 <input
                   type="text"
                   id="father_name"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-3  "
                   placeholder="Father name"
                   required
                 />
@@ -37,49 +38,58 @@ function GetStarted() {
               <div>
                 <label
                   for="mother_name"
-                  class="block mb-px text-center text-sm font-medium text-gray-900"
+                  class="block mb-px  text-lg font-medium text-gray-900"
                 >
                   Mother's Name
                 </label>
                 <input
                   type="text"
                   id="last_name"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-3 "
                   placeholder="Mother's name"
                   required
                 />
               </div>
             </div>
-            <div>
-              <label
-                for="child_name"
-                class="block mb-px text-center text-sm font-medium text-gray-900 "
-              >
-                Child name
-              </label>
-              <input
-                type="text"
-                id="child_name"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-                placeholder="Father name"
-                required
-              />
+            <div className="">
+              <div>
+                <label
+                  for="child_name"
+                  class="block mb-px text-lg font-medium text-gray-900 "
+                >
+                  Child name
+                </label>
+                <input
+                  type="text"
+                  id="child_name"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-3  "
+                  placeholder="Father name"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="child_dob"
+                  class="block mb-px mt-1 text-lg font-medium text-gray-900 "
+                >
+                  Child Date of Birth
+                </label>
+                <input
+                  type="date"
+                  id="child_dob"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
+                  placeholder="Child dob"
+                  required
+                />
+              </div>
             </div>
-            <div>
-              <label
-                for="child_dob"
-                class="block mb-px mt-1 text-center text-sm font-medium text-gray-900 "
-              >
-                Child Date of Birth
-              </label>
-              <input
-                type="date"
-                id="child_dob"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-                placeholder="Child dob"
-                required
-              />
-            </div>
+            <TextField
+              required
+              className="bg-white"
+              id="father_name"
+              label="Father name"
+              defaultValue="Father name"
+            />
 
             <button
               type="submit"

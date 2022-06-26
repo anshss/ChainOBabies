@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "@alan-ai/alan-sdk-web": "^1.8.34",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.8.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-floater": "^0.8.2",
     "react-floaterjs": "^1.0.6",
     "react-router-dom": "^6.3.0",
     "sass": "^1.53.0"
