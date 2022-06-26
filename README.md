@@ -14,7 +14,8 @@ And that's what Chain O' Brain allows you to do.
 - This elegant and eye-soothing interface is in resonance with the feeling of the day.
 
 <br />
-
+### [Click here to see Deployed Website Live](https://chain-o-baby.vercel.app/)
+<br />
 
 ### Built with
 - React
@@ -51,7 +52,6 @@ Alan AI is a in-app voice  assistant to guid you through using our website. Try 
 4. "how to submit"
 
 <br />
-
 [Video link of project](https://youtu.be/N70kwde-oEY)
 
 <br />
