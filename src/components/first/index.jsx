@@ -2,6 +2,7 @@ import React from "react";
 import "./index.scss";
 import Cake from "./cakex.png";
 import ReactFloaterJs from "react-floaterjs";
+import { Link } from "react-router-dom";
 
 const First = () => {
   return (
@@ -23,7 +24,9 @@ const First = () => {
         </div>
       </div>
       <div className="section2">
-        <button className="slide btndiv">Click Here To Register</button>
+        <Link to="/getstarted" className="slide btndiv">
+          Click Here To Register
+        </Link>
       </div>
     </div>
   );
