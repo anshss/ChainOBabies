@@ -22,14 +22,14 @@ function GetStarted() {
             <div className="flex justify-center gap-6">
               <TextField
                 required
-                className="bg-gray-50"
+                className="bg-gray-50 border-none !focus:ring-none"
                 id="father_name"
                 label="Father name"
                 defaultValue=""
               />
               <TextField
                 required
-                className="bg-gray-50"
+                className="bg-gray-50 rounded-md"
                 id="mother_name"
                 label="Mother name"
                 defaultValue=""
@@ -46,10 +46,10 @@ function GetStarted() {
 
               <TextField
                 id="date"
-                className="bg-gray-50"
+                className="bg-gray-50 text-gray-200 placeholder:bg-gray-500"
                 label="Birthday"
                 type="date"
-                defaultValue="2017-05-24"
+                defaultValue=""
                 sx={{ width: 220 }}
                 InputLabelProps={{
                   shrink: true,
