@@ -1,14 +1,81 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import Web3Modal from "web3modal";
+import "./popup.scss";
+
+
 
 function Popup() {
   const handelSubmit = () => {};
+
+  const [walletConnected, setWalletConnected] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const web3ModalRef = useRef();
+
+
+  const getProviderOrSigner = async (needSigner = false) => {
+    const provider = await web3ModalRef.current.connect();
+    const web3Provider = new providers.Web3Provider(provider);
+    const { chainId } = await web3Provider.getNetwork();
+    if (chainId !== 4) {
+      window.alert("Change the network to Rinkeby");
+      throw new Error("Change network to Rinkeby");
+    }
+
+    if (needSigner) {
+      const signer = web3Provider.getSigner();
+      return signer;
+    }
+    return web3Provider;
+  };
+
+
+  const connectWallet = async () => {
+    try {
+      await getProviderOrSigner();
+      setWalletConnected(true);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+
+  useEffect(() => {
+    if (!walletConnected) {
+      web3ModalRef.current = new Web3Modal({
+        network: "rinkeby",
+        providerOptions: {},
+        disableInjectedProvider: false,
+      });
+      connectWallet();
+    }
+  }, [walletConnected]);
+
+
+  const renderButton = () => {
+    if (walletConnected) {
+      return(
+        <div>
+        <button className="btnconnect">WalletConnected</button>
+      </div>
+      )
+      }
+      else {
+      return (
+        <button onClick={connectWallet} className="btnconnect">
+          Connect your wallet
+        </button>
+      );
+    }
+  };
+
+
   return (
     <div className="bg-gray-500 w-1/2 h-72 p-8 absolute z-50 bg-opacity-90 flex justify-center flex-col rounded-md">
       <h3 className="mb-12 text-2xl font-medium text-white">
         ENTER YOUR EMAIL
       </h3>
-      {/* <p className="mb-8 font-medium text-gray-300">
-        Please enter your email below. </p> */}
+      {/* <p className="mb-8 font-medium text-gray-300"> */}
+        {/* We will be sending you warm greetings on this email each year. </p> */}
 
       <div class="relative mb-12">
         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -38,6 +105,7 @@ function Popup() {
           </button>
         </div>
       </div>
+        <div className="btnconnect">{renderButton} Connect Your Wallet</div>
     </div>
   );
 }
