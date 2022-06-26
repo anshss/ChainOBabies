@@ -52,4 +52,4 @@ Alan AI is a in-app voice  assistant to guid you through using our website. Try 
 
 <br />
 
-[Video link of project]()
+[Video link of project](https://youtu.be/N70kwde-oEY)
