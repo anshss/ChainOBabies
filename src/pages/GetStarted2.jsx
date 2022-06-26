@@ -15,11 +15,11 @@ function GetStarted() {
             <div className="flex justify-center items-center">
                 {showPopup && <Popup />}
                 <form onSubmit={handelSubmit}>
-                    <div class="flex flex-col items-center h-screen justify-center">
+                    <div class="flex flex-col h-screen justify-center">
                         <h1 className="text-xl text-gray-900 -mt-6 font-bold text-center">
                             ENTER YOUR DETAILS
                         </h1>
-                        <div className="flex justify-center gap-6">
+                        <div className="flex gap-6">
                             <TextField
                                 required
                                 className="bg-[#ecd1e5] w-[18rem]"
@@ -28,7 +28,7 @@ function GetStarted() {
                                 defaultValue=""
                             />
                             <TextField
-                                className="bg-[#ecd1e5] w-[18rem]"
+                                className="bg-[#ecd1e5] w-[18rem] "
                                 id="mother_name"
                                 label="Parent name"
                                 defaultValue=""
@@ -37,7 +37,7 @@ function GetStarted() {
                         <div className="flex mt-12 gap-6 input">
                             <TextField
                                 required
-                                className="bg-[#ecd1e5] w-[18rem] "
+                                className="bg-[#ecd1e5] w-[18rem]"
                                 id="child_name"
                                 label="Child name"
                                 defaultValue=""
