@@ -15,7 +15,7 @@ And that's what Chain O' Brain allows you to do.
 
 <br />
 
-### [👉 Click here to see deployed site Live](https://chain-0-baby.vercel.app/)
+### [👉 Click here to see deployed site Live](https://chain-o-baby.vercel.app/)
 
 <br />
 
