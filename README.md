@@ -1,14 +1,55 @@
-# glenX
-Here is the AlanAi and Web3.0 integrated project. This project is a simple website, which allows one to register his/her child birthday on a blockChain, as the contract is immutable, clild birthday is saved with us. We will wish him every year.
 
-# Alan Ai
-Alan Ai is a new innovation which makes voice implementaion in a website super easy and effective. We used Alan Ai to make our website voice controlled.
-You can command alan following things-
-1. "What can you do?" - Tells a little about what our website can do. 
-2. "get started" - redirect to login page
-3. "Go back" - go back to previous page
-4. "how to submit" - tells about how to proceed.
-5. A small intro when open our website. 
-6. And even more exiting voice command on the way.
 
-#Web 3.0
+### About Project
+What if you can get your newborn registered on it and live this moment forever with the power of smart contracts and that too without any prior knowledge of smart contracts or web3.
+
+That unique feeling that a parent feels can't be described in words...
+But This day can be recorded permanently on the blockchain.
+
+And that's what Chain O' Brain allows you to do.
+
+- It provides a simple interface with some basic details to get your delicate newborn lifeform registered on a blockchain.
+- By registering, you'll also get warm greetings through messages with our Twilio integrated service.
+- And our alan AI bot will guide you through the website.
+- This elegant and eye-soothing interface is in resonance with the feeling of the day.
+
+<br />
+
+
+### Built with
+- React
+- Sass
+- Tailwind
+- Ether.js
+
+<br />
+
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/SOLTOTHEMOON/Wedding-Chain.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Start project
+   ```sh
+   npm start
+   ```
+ 
+<br />
+
+
+### Alan Ai
+Alan AI is a in-app voice  assistant to guid you through using our website. Try some of the following commands:
+1. "What can you do?" 
+2. "get started"
+3. "Go back"
+4. "how to submit"
+
+<br />
+
+[Video link of project]()
