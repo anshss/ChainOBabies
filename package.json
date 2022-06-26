@@ -14,7 +14,6 @@
     "@mui/material": "^5.8.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-floaterjs": "^1.0.6",
     "react-router-dom": "^6.3.0",
     "sass": "^1.53.0"
   },

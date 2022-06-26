@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.scss";
 import Cake from "./cakex.png";
-import ReactFloaterJs from "react-floaterjs";
 import { Link } from "react-router-dom";
 
 const First = () => {
@@ -18,9 +17,9 @@ const First = () => {
           </h3>
         </div>
         <div className="imgdiv">
-          <ReactFloaterJs>
+          <div className="ani-bounce">
             <img src={Cake} />
-          </ReactFloaterJs>
+          </div>
         </div>
       </div>
       <div className="section2">
