@@ -53,3 +53,8 @@ Alan AI is a in-app voice  assistant to guid you through using our website. Try 
 <br />
 
 [Video link of project](https://youtu.be/N70kwde-oEY)
+
+<br />
+
+### Future Scope
+Staking could be enabled on the platform allowing parents to stake tokens for their children. Newborn's wallet address will be made and staked token will be transferred there directly. Once the newborn turns 18 parent's could gift them there accounts private key. Parents colud also create yearly SIP for increasing staked amount.
