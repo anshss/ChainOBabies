@@ -1,6 +1,6 @@
 import React from "react";
 import Popup from "../components/Popup";
-import "./index.css";
+import "./index.scss";
 import { TextField } from "@mui/material";
 
 function GetStarted() {
@@ -14,31 +14,31 @@ function GetStarted() {
     <div className="w-full h-screen bg-gradient-to-tr from-[#f0d7eb] to-[#ddafd3] via-[#ebcbe3]">
       <div className="flex justify-center items-center">
         {showPopup && <Popup />}
+
         <form onSubmit={handelSubmit}>
-          <div class="flex flex-col items-center h-screen justify-center">
+          <div class="flex flex-col h-screen justify-center">
             <h1 className="text-xl text-gray-900 -mt-6 font-bold text-center">
-              Enter your Details
+              ENTER YOUR DETAILS
             </h1>
-            <div className="flex justify-center gap-6">
+            <div className="flex justify-between">
               <TextField
                 required
-                className="bg-gray-50 border-none !focus:ring-none"
+                className="bg-[#ecd1e5] w-[18rem]"
                 id="father_name"
-                label="Father name"
+                label="Parent name"
                 defaultValue=""
               />
               <TextField
-                required
-                className="bg-gray-50 rounded-md"
+                className="bg-[#ecd1e5] w-[18rem] "
                 id="mother_name"
-                label="Mother name"
+                label="Parent name"
                 defaultValue=""
               />
             </div>
-            <div className="flex mt-6 gap-6">
+            <div className="flex mt-12 justify-between input">
               <TextField
                 required
-                className="bg-gray-50"
+                className="bg-[#ecd1e5] w-[18rem]"
                 id="child_name"
                 label="Child name"
                 defaultValue=""
@@ -46,29 +46,25 @@ function GetStarted() {
 
               <TextField
                 id="date"
-                className="bg-gray-50 text-gray-200 placeholder:bg-gray-500"
-                label="Birthday"
+                className="w-[18rem]"
+                label="Birth Date"
                 type="date"
-                defaultValue=""
-                sx={{ width: 220 }}
+                defaultValue="2022-06-26"
                 InputLabelProps={{
                   shrink: true,
                 }}
               />
             </div>
-            <div className="mt-5">
+            <div className="mt-12">
               <TextField
                 required
-                className="bg-gray-50 w-[465px]"
+                className="bg-[#ecd1e5]  w-[40rem]"
                 id="birth_certificate"
                 label="Birth certificate number"
                 defaultValue=""
               />
             </div>
-            <button
-              type="submit"
-              class="text-white mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
+            <button type="submit" class="btn">
               Submit
             </button>
           </div>
