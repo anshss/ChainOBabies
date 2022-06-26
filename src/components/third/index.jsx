@@ -11,6 +11,7 @@ const Third = () => {
         <div className="sec2">
             <p>anshspvt@gmail.com</p>
             <p>sarthakvaish184@gmail.com</p>
+            <p>ashish080303@gmail.com</p>
         </div>
         </div>
     )

@@ -26,7 +26,7 @@ function Popup() {
           <input
             type="text"
             id="input-group-1"
-            class="bg-gray-300 border text-gray-700 border-gray-500  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  "
+            class="bg-gray-300 border text-gray-700 border-gray-500  text-sm rounded-lg block w-full pl-10 p-2.5  "
             placeholder="name@flowbite.com"
           />
           <button
