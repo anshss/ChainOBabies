@@ -1,0 +1,36 @@
+.second{
+    padding-top: 14rem;
+    padding-bottom: 22rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: row;    
+    background-color: #F9F3EE;
+
+
+    .card{
+        color: #ac7d88;
+        background-image: linear-gradient(to bottom right, #f7e1f3, #e1c0da);
+        border-radius: 3px;
+        text-align: center;
+        width: 15%;
+        height: 18rem;
+        margin: 2rem;
+        padding: 5rem;
+        padding-top: 7rem; 
+ 
+        
+        img{
+            max-width: 50%;
+            max-height: 100%;
+            padding-bottom: 1rem;
+            }
+        
+    }
+
+    .card:hover{
+        box-shadow: 0 0 21px rgba(33,33,33,.2); 
+      }
+
+}
